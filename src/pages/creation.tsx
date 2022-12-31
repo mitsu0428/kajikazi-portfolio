@@ -1,73 +1,73 @@
 import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import MagicGrid from "magic-grid";
 
 function creation() {
-  const [grid, setGrid] = useState<MagicGrid | null>(null);
-  useEffect(() => {
-    const grid = new MagicGrid({
-      container: "#grid",
-      static: true,
-      animate: true,
-      gutter: 40,
-      useMin: true,
-    });
-    grid.listen();
-    setGrid(grid);
-  }, []);
   return (
-    <MainContainerArea id="grid">
-      <SubContainerArea>
-        <ImageArea layout="fill" src="/static/10.jpg" alt="kaji-logo" />
-      </SubContainerArea>
-      <SubContainerArea>
-        <ImageArea layout="fill" src="/static/16.jpg" alt="kaji-logo" />
-      </SubContainerArea>
-      <SubContainerArea>
-        <ImageArea layout="fill" src="/static/20.jpg" alt="kaji-logo" />
-      </SubContainerArea>
-      <SubContainerArea>
-        <ImageArea layout="fill" src="/static/22.jpg" alt="kaji-logo" />
-      </SubContainerArea>
-      <SubContainerArea>
-        <ImageArea layout="fill" src="/static/10.jpg" alt="kaji-logo" />
-      </SubContainerArea>
-      <SubContainerArea>
-        <ImageArea layout="fill" src="/static/16.jpg" alt="kaji-logo" />
-      </SubContainerArea>
-      <SubContainerArea>
-        <ImageArea layout="fill" src="/static/20.jpg" alt="kaji-logo" />
-      </SubContainerArea>
-      <SubContainerArea>
-        <ImageArea layout="fill" src="/static/22.jpg" alt="kaji-logo" />
-      </SubContainerArea>
-      <SubContainerArea>
-        <ImageArea layout="fill" src="/static/10.jpg" alt="kaji-logo" />
-      </SubContainerArea>
-      <SubContainerArea>
-        <ImageArea layout="fill" src="/static/16.jpg" alt="kaji-logo" />
-      </SubContainerArea>
-      <SubContainerArea>
-        <ImageArea layout="fill" src="/static/20.jpg" alt="kaji-logo" />
-      </SubContainerArea>
-      <SubContainerArea>
-        <ImageArea layout="fill" src="/static/22.jpg" alt="kaji-logo" />
-      </SubContainerArea>
-    </MainContainerArea>
+    <Container>
+      <SubContainer>
+        <ImageTag layout="fill" src="/static/10.jpg" alt="kaji-logo" />
+      </SubContainer>
+      <SubContainer>
+        <ImageTag layout="fill" src="/static/18.jpg" alt="kaji-logo" />
+      </SubContainer>
+      <SubContainer>
+        <ImageTag layout="fill" src="/static/20.jpg" alt="kaji-logo" />
+      </SubContainer>
+      <SubContainer>
+        <ImageTag layout="fill" src="/static/18.jpg" alt="kaji-logo" />
+      </SubContainer>
+      <SubContainer>
+        <ImageTag layout="fill" src="/static/10.jpg" alt="kaji-logo" />
+      </SubContainer>
+      <SubContainer>
+        <ImageTag layout="fill" src="/static/16.jpg" alt="kaji-logo" />
+      </SubContainer>
+      <SubContainer>
+        <ImageTag layout="fill" src="/static/20.jpg" alt="kaji-logo" />
+      </SubContainer>
+      <SubContainer>
+        <ImageTag layout="fill" src="/static/22.jpg" alt="kaji-logo" />
+      </SubContainer>
+      <SubContainer>
+        <ImageTag layout="fill" src="/static/10.jpg" alt="kaji-logo" />
+      </SubContainer>
+      <SubContainer>
+        <ImageTag layout="fill" src="/static/16.jpg" alt="kaji-logo" />
+      </SubContainer>
+      <SubContainer>
+        <ImageTag layout="fill" src="/static/20.jpg" alt="kaji-logo" />
+      </SubContainer>
+      <SubContainer>
+        <ImageTag layout="fill" src="/static/18.jpg" alt="kaji-logo" />
+      </SubContainer>
+    </Container>
   );
 }
 
 export default creation;
 
-const ImageArea = styled(Image)`
+const ImageTag = styled(Image)`
   position: relative !important;
-  width: 50% !important;
+  width: 100% !important;
   height: unset !important;
 `;
 
-const MainContainerArea = styled.div``;
+const Container = styled.div`
+  width: 100%;
+  column-count: 3;
+  @media (max-width: 1024px) {
+    column-count: 2;
+  }
+  @media (max-width: 768px) {
+    column-count: 1;
+  }
+`;
 
-const SubContainerArea = styled.div``;
+const SubContainer = styled.div`
+  break-inside: avoid;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+`;
