@@ -15,8 +15,8 @@ const HearderComponents = ({ isTopPage }: Props): JSX.Element => {
       <Link href="/">
         <Logo
           src="/kajitop.svg"
-          width={60}
-          height={60}
+          width={50}
+          height={50}
           alt="Kajiwara Hayatoのロゴ"
         />
       </Link>
@@ -29,8 +29,8 @@ const HearderComponents = ({ isTopPage }: Props): JSX.Element => {
       <Link href="/">
         <Logo
           src="/kajitop.svg"
-          width={60}
-          height={60}
+          width={50}
+          height={50}
           alt="Kajiwara Hayatoのロゴ"
         />
       </Link>
