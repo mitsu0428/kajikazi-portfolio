@@ -8,7 +8,7 @@ type Props = {
 };
 
 const PropsLink = ({ toPage, toPageName }: Props): JSX.Element => {
-  return <CustomLink href={toPage}>{toPageName}</CustomLink>;
+  return <CustomLink href={toPage ?? ""}>{toPageName ?? ""}</CustomLink>;
 };
 
 export default PropsLink;
