@@ -3,7 +3,7 @@ import Head from "next/head";
 import styled from "styled-components";
 import TopPageMovie from "./components/TopPageMovie";
 import Arrow from "./components/recepies/Arrow";
-import Creation from "./components/creation";
+import CreationComponents from "./components/CreationComponents";
 import { FaTwitter, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 
 export const Home = () => {
@@ -46,7 +46,7 @@ export const Home = () => {
           </Text>
           <Text>さぁ まだ想像したこともない カラフルな世界へ踏み出そう</Text>
         </Container>
-        <Creation />
+        <CreationComponents />
       </main>
     </Container>
   );
