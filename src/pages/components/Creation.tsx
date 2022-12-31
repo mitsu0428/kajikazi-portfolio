@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 
-const creation = () => {
+const Creation = () => {
   return (
     <Container>
       <SubContainer>
@@ -45,7 +45,7 @@ const creation = () => {
   );
 };
 
-export default creation;
+export default Creation;
 
 const ImageTag = styled(Image)`
   position: relative !important;
