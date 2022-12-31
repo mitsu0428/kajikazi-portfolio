@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 
-function creation() {
+const creation = () => {
   return (
     <Container>
       <SubContainer>
@@ -43,7 +43,7 @@ function creation() {
       </SubContainer>
     </Container>
   );
-}
+};
 
 export default creation;
 

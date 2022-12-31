@@ -86,7 +86,7 @@ const SubContainerArea = styled.div`
 const Title = styled.h1`
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 6rem;
 `;
 
 const Paragraph = styled.p`

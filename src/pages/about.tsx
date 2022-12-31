@@ -1,43 +1,43 @@
 import React from "react";
 import styled from "styled-components";
 
-function about() {
+const about = () => {
   return (
-    <BasicContainer>
-      <BasicSubContainer>
-        <Paragraph>梶原　捷季</Paragraph>
-      </BasicSubContainer>
-      <BasicContainer>
+    <Container>
+      <SubContainer>
+        <Paragraph>梶原 捷季</Paragraph>
+      </SubContainer>
+      <Container>
         <Paragraph>1999年生まれ。東京都出身。現在は株式会社third</Paragraph>
-      </BasicContainer>
-      <BasicContainer>
+      </Container>
+      <Container>
         <Paragraph>phaseでデジタルクリエイターとして働いています。</Paragraph>
-      </BasicContainer>
-      <BasicContainer>
+      </Container>
+      <Container>
         <Paragraph>
           2023年卒業予定の青山学院大学SCCSにて、デジタルクリエイターとしての学びを積んでいます。
         </Paragraph>
-      </BasicContainer>
-      <BasicContainer>
+      </Container>
+      <Container>
         <Paragraph>2020年にAdobe Certified Professional</Paragraph>
-      </BasicContainer>
-      <BasicContainer>
+      </Container>
+      <Container>
         <Paragraph>IllustratorとPhotoshopを取得しました。</Paragraph>
-      </BasicContainer>
-    </BasicContainer>
+      </Container>
+    </Container>
   );
-}
+};
 
 export default about;
 
-const BasicContainer = styled.div`
+const Container = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 `;
 
-const BasicSubContainer = styled.div`
+const SubContainer = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
