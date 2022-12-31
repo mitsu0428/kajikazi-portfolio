@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
-import PropsLink from "./recepies/CustomButton";
+import PropsLink from "./recepies/CustomLink";
 
 type Props = {
   isTopPage: boolean;
