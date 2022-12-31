@@ -1,11 +1,27 @@
 import React from "react";
-
 import styled from "styled-components";
 
 function TopPageMovie() {
+  const [isSmartPhone, setIsSmartPhone] = React.useState(false);
+
+  React.useEffect(() => {
+    const ua = navigator.userAgent;
+    if (
+      ua.indexOf("iPhone") > 0 ||
+      ua.indexOf("Android") > 0 ||
+      ua.indexOf("iPad") > 0
+    ) {
+      setIsSmartPhone(true);
+    }
+  }, []);
+
   return (
     <Container>
-      <Video src="/kajitop.mp4" autoPlay loop muted></Video>
+      {isSmartPhone ? (
+        <Video src="/KajiTopSp.mov" autoPlay loop muted />
+      ) : (
+        <Video src="/KajiTopPc.mp4" autoPlay loop muted />
+      )}
     </Container>
   );
 }

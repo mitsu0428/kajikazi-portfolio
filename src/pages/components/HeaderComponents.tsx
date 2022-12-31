@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
+import PropsLink from "./recepies/CustomButton";
 
 type Props = {
   isTopPage: boolean;
@@ -20,9 +21,7 @@ const HearderComponents = ({ isTopPage }: Props): JSX.Element => {
         />
       </Link>
       <Container>
-        <Link href="/about">
-          <Text>About</Text>
-        </Link>
+        <PropsLink toPage="/about" toPageName="About" />
       </Container>
     </HeaderMain>
   ) : (
@@ -36,9 +35,7 @@ const HearderComponents = ({ isTopPage }: Props): JSX.Element => {
         />
       </Link>
       <Container>
-        <Link href="/">
-          <Text>Home</Text>
-        </Link>
+        <PropsLink toPage="/" toPageName="Home" />
       </Container>
     </HearderSub>
   );
@@ -72,13 +69,6 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`;
-
-const Text = styled.p`
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 32px;
-  margin-left: 32px;
 `;
 
 const Logo = styled(Image)`

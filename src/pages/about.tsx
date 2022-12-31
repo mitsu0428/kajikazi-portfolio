@@ -5,25 +5,29 @@ const about = () => {
   return (
     <Container>
       <Container>
-        <SubTitle>梶原 捷季</SubTitle>
+        <SubTitle>Profile</SubTitle>
+        <Text>Hayato Kajiwara</Text>
+        <Text>1999.05.22</Text>
+        <Text>Tokyo</Text>
       </Container>
+      <Hr />
       <Container>
-        <Text>1999年生まれ。東京都出身。現在は株式会社third</Text>
+        <SubTitle>Job</SubTitle>
+        <Text>株式会社third phase</Text>
+        <Text>デジタルクリエイター</Text>
       </Container>
+      <Hr />
       <Container>
-        <Text>phaseでデジタルクリエイターとして働いています。</Text>
+        <SubTitle>Education</SubTitle>
+        <Text>Aoyama Gakuin University - SCCS -</Text>
       </Container>
+      <Hr />
       <Container>
-        <Text>
-          2023年卒業予定の青山学院大学SCCSにて、デジタルクリエイターとしての学びを積んでいます。
-        </Text>
+        <SubTitle>Skills</SubTitle>
+        <Text>Adobe Certified Professional</Text>
+        <Text>Illustrator | Photoshop</Text>
       </Container>
-      <Container>
-        <Text>2020年にAdobe Certified Professional</Text>
-      </Container>
-      <Container>
-        <Text>IllustratorとPhotoshopを取得しました。</Text>
-      </Container>
+      <Hr />
     </Container>
   );
 };
@@ -38,7 +42,7 @@ const Container = styled.div`
 `;
 
 const SubTitle = styled.h2`
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 700;
   margin-top: 32px;
 `;
@@ -47,4 +51,16 @@ const Text = styled.p`
   font-size: 16px;
   font-weight: 400;
   margin-top: 32px;
+`;
+
+const Hr = styled.hr`
+  border-width: 0 0 1px;
+  border-image: linear-gradient(
+      90deg,
+      hsla(0, 0%, 35%, 0),
+      hsla(0, 0%, 35%, 0.5) 50%,
+      hsla(0, 0%, 35%, 0) 100%
+    )
+    0 0 100%;
+  border-style: solid;
 `;

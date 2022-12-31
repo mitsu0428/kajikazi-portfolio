@@ -60,7 +60,6 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 0 0.5rem;
   text-align: center;
 `;
 
@@ -72,7 +71,7 @@ const Title = styled.h1`
 `;
 
 const SubTitle = styled.h2`
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 700;
   margin-top: 32px;
   text-align: center;
