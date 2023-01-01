@@ -6,12 +6,7 @@ import HearderComponents from "./components/HeaderComponents";
 import FooterComponents from "./components/FooterComponents";
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => {
-  let isTopPage = false;
-  if (Component.name === "Home") {
-    isTopPage = true;
-  } else {
-    isTopPage = false;
-  }
+  const isTopPage = Component.name === "Home";
   return (
     <>
       <HearderComponents isTopPage={isTopPage} />
