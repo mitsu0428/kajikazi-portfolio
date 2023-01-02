@@ -11,7 +11,7 @@ function FooterComponents() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{"Kaji"}
+          Powered by{"Hayato Kajiwara"}
         </a>
       </BasicFooter>
     </div>
@@ -26,6 +26,7 @@ const BasicFooter = styled.footer`
   padding: 0 1rem;
   margin-top: 32px;
   padding-bottom: 32px;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;

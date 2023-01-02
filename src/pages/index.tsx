@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import TopPageMovie from "./components/TopPageMovie";
 import SeoSettings from "./components/SeoSettings";
-import Arrow from "./components/recepies/Arrow";
+import Gradation from "./components/recepies/Gradation";
 import CreationComponents from "./components/CreationComponents";
 import { FaTwitter, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 
@@ -28,7 +28,7 @@ export const Home = () => {
           <Tiktok size={30} color={"#595959"} />
           <Youtube size={30} color={"#595959"} />
         </Container>
-        <Arrow />
+        <Gradation />
         <Container>
           <SubTitle>What I Think is ...</SubTitle>
           <Text>
@@ -67,7 +67,7 @@ const Container = styled.div`
 
 const Title = styled.h1`
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 1000;
   margin-top: 32px;
   text-align: center;
 `;
