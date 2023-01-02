@@ -1,7 +1,7 @@
 import React from "react";
-import Head from "next/head";
 import styled from "styled-components";
 import TopPageMovie from "./components/TopPageMovie";
+import SeoSettings from "./components/SeoSettings";
 import Arrow from "./components/recepies/Arrow";
 import CreationComponents from "./components/CreationComponents";
 import { FaTwitter, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
@@ -9,14 +9,16 @@ import { FaTwitter, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 export const Home = () => {
   return (
     <Container>
-      <Head>
-        <title>梶原捷季のポートフォリオサイト</title>
-        <meta
-          name="梶原捷季のポートフォリオサイト"
-          content="梶原捷季のポートフォリオサイト"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SeoSettings
+        pageTitle={"梶原捷季のポートフォリオサイト"}
+        pageDescription={
+          "梶原捷季のポートフォリオサイト | デジタルクリエイター | SNS運用"
+        }
+        pagePath={"https://kajikazi.com"}
+        pageImg={"https://kajikazi.com"}
+        pageImgWidth={1280}
+        pageImgHeight={960}
+      />
       <main>
         <TopPageMovie />
         <Container>
