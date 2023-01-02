@@ -22,9 +22,23 @@ function TopPageMovie() {
   return (
     <Container>
       {isSmartPhone ? (
-        <Video src="/KajiTopSp.mov" autoPlay loop muted />
+        <Video
+          src="/KajiTopSp.mov"
+          autoPlay
+          loop
+          muted
+          playsInline
+          webkit-playsinline="true"
+        />
       ) : (
-        <Video src="/KajiTopPc.mp4" autoPlay loop muted />
+        <Video
+          src="/KajiTopPc.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          webkit-playsinline="true"
+        />
       )}
     </Container>
   );
