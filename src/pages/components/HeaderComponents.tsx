@@ -1,15 +1,25 @@
-/* eslint-disable react/react-in-jsx-scope */
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useRouter } from "next/router";
 import styled from "styled-components";
 import PropsLink from "./recepies/CustomLink";
 
-type Props = {
-  isTopPage: boolean;
-};
+const HearderComponents = (): JSX.Element => {
+  const [isTopPage, setIsTopPage] = React.useState(false);
 
-const HearderComponents = ({ isTopPage }: Props): JSX.Element => {
+  //URLを取得する
+  const router = useRouter();
+  const path = router.pathname;
+
+  React.useEffect(() => {
+    if (path === "/") {
+      setIsTopPage(true);
+    } else {
+      setIsTopPage(false);
+    }
+  }, [path]);
+
   return isTopPage ? (
     <HeaderMain>
       <Link href="/">
