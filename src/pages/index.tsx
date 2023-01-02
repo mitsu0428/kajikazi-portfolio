@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import TopPageMovie from "./components/TopPageMovie";
+// import TopPageMovie from "./components/TopPageMovie";
 import SeoSettings from "./components/SeoSettings";
 import Arrow from "./components/recepies/Arrow";
 import CreationComponents from "./components/CreationComponents";
@@ -20,7 +20,6 @@ export const Home = () => {
         pageImgHeight={960}
       />
       <main>
-        <TopPageMovie />
         <Container>
           <Title>Color Yout World</Title>
           <Instagram size={30} color={"#595959"} />
