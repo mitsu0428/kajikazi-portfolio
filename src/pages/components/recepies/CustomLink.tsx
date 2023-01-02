@@ -8,10 +8,20 @@ type Props = {
 };
 
 const PropsLink = ({ toPage, toPageName }: Props): JSX.Element => {
-  return <CustomLink href={toPage ?? ""}>{toPageName ?? ""}</CustomLink>;
+  return (
+    <CustomText>
+      <CustomLink href={toPage ?? ""}>{toPageName ?? ""}</CustomLink>
+    </CustomText>
+  );
 };
 
 export default PropsLink;
+
+const CustomText = styled.p`
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+`;
 
 const CustomLink = styled(Link)`
   display: inline-block;
