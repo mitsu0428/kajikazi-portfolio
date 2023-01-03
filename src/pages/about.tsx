@@ -40,12 +40,14 @@ const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
+  color: rgba(255, 255, 255, 0.8);
 `;
 
 const SubTitle = styled.h2`
   font-size: 32px;
   font-weight: 700;
   margin-top: 32px;
+  color: rgba(255, 255, 255, 0.8);
 `;
 
 const Text = styled.p`
