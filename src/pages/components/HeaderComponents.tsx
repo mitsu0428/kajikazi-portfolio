@@ -29,8 +29,8 @@ const HearderComponents = (): JSX.Element => {
           height={50}
           alt="Kajiwara Hayatoのロゴ"
         />
-        <PropsLink toPage="/about" toPageName="About" />
       </Link>
+      <PropsLink toPage="/about" toPageName="About" />
     </HeaderMain>
   ) : (
     <HearderSub>
@@ -41,8 +41,8 @@ const HearderComponents = (): JSX.Element => {
           height={50}
           alt="Kajiwara Hayatoのロゴ"
         />
-        <PropsLink toPage="/" toPageName="Home" />
       </Link>
+      <PropsLink toPage="/" toPageName="Home" />
     </HearderSub>
   );
 };

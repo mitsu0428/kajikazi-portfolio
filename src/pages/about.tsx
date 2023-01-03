@@ -43,7 +43,7 @@ const Container = styled.div`
 `;
 
 const SubTitle = styled.h2`
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   margin-top: 32px;
 `;
