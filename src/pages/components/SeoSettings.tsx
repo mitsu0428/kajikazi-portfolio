@@ -47,7 +47,7 @@ const SeoSettings = ({
       <meta property="og:image:height" content={String(imgHeight)} />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
-        href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
         rel="stylesheet"
       />
       <link rel="canonical" href={url} />

@@ -20,7 +20,7 @@ export default PropsLink;
 const CustomText = styled.p`
   font-size: 16px;
   font-weight: bold;
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
 `;
 
 const CustomLink = styled(Link)`
@@ -31,7 +31,7 @@ const CustomLink = styled(Link)`
   margin: 0;
   text-decoration: none;
   background: transparent;
-  color: white;
+  color: rgba(255, 255, 255, 0.8)
   font-family: sans-serif;
   font-size: 1em;
   cursor: pointer;

@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Kdam Thmor Pro", sans-serif;
 }
 
 html,
@@ -11,7 +11,7 @@ body {
 }
 
 p {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 a {
@@ -36,7 +36,7 @@ header span {
     color-scheme: dark;
   }
   body {
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
     background: black;
   }
 }

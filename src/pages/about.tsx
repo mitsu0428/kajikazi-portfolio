@@ -1,25 +1,27 @@
 import React from "react";
 import styled from "styled-components";
+import { FaMapMarkerAlt, FaPhotoVideo } from "react-icons/fa";
 
 const about = () => {
   return (
     <Container>
       <Container>
         <SubTitle>Profile</SubTitle>
-        <Text>Hayato Kajiwara</Text>
-        <Text>1999.05.22</Text>
-        <Text>Tokyo</Text>
+        <Text>Hayato Kajiwara / digital creator / photographer</Text>
+        <Text>Captures what it feels like.</Text>
+        <Text>
+          <MapIcon />
+          in Tokyo, Japan
+        </Text>
       </Container>
       <Hr />
       <Container>
         <SubTitle>Job</SubTitle>
         <Text>株式会社third phase</Text>
-        <Text>デジタルクリエイター</Text>
-      </Container>
-      <Hr />
-      <Container>
-        <SubTitle>Education</SubTitle>
-        <Text>Aoyama Gakuin University - SCCS -</Text>
+        <Text>
+          <JobIcon />
+          digital creator
+        </Text>
       </Container>
       <Hr />
       <Container>
@@ -51,6 +53,7 @@ const Text = styled.p`
   font-size: 16px;
   font-weight: 400;
   margin-top: 32px;
+  margin-left: 32px;
 `;
 
 const Hr = styled.hr`
@@ -63,4 +66,12 @@ const Hr = styled.hr`
     )
     0 0 100%;
   border-style: solid;
+`;
+
+const MapIcon = styled(FaMapMarkerAlt)`
+  margin-right: 8px;
+`;
+
+const JobIcon = styled(FaPhotoVideo)`
+  margin-right: 8px;
 `;
