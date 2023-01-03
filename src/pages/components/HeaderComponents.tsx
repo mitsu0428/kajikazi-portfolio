@@ -29,10 +29,8 @@ const HearderComponents = (): JSX.Element => {
           height={50}
           alt="Kajiwara Hayatoのロゴ"
         />
-      </Link>
-      <Container>
         <PropsLink toPage="/about" toPageName="About" />
-      </Container>
+      </Link>
     </HeaderMain>
   ) : (
     <HearderSub>
@@ -43,10 +41,8 @@ const HearderComponents = (): JSX.Element => {
           height={50}
           alt="Kajiwara Hayatoのロゴ"
         />
-      </Link>
-      <Container>
         <PropsLink toPage="/" toPageName="Home" />
-      </Container>
+      </Link>
     </HearderSub>
   );
 };
@@ -70,12 +66,6 @@ const HearderSub = styled.header`
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
