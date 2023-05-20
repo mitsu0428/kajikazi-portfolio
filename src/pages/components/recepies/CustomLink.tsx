@@ -27,8 +27,6 @@ const CustomLink = styled(Link)`
   display: inline-block;
   border: none;
   outline: none;
-  padding: 0.75em 1.5em;
-  margin: 0;
   text-decoration: none;
   background: transparent;
   color: rgba(255, 255, 255, 0.8)
@@ -42,11 +40,6 @@ const CustomLink = styled(Link)`
 
   &:before {
     content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     opacity: 0;
     transition: 0.3s;
   }

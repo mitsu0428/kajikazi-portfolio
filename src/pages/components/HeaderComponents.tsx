@@ -53,24 +53,21 @@ const HeaderMain = styled.header`
   position: absolute;
   z-index: 100;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 24px;
 `;
 
 const HearderSub = styled.header`
   width: 100%
   z-index: 100;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 24px;
 `;
 
 const Logo = styled(Image)`
-  margin-top: 32px;
+  border-radius: 8px;
 `;
