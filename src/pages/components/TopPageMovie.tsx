@@ -49,12 +49,14 @@ export default TopPageMovie;
 const Container = styled.div`
   width: 100%;
   height: 100vh;
+  position: relative;
+  padding: 16px;
 `;
 
 const Video = styled.video`
-  overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;
+  border-radius: 8px;
   z-index: -1;
 `;

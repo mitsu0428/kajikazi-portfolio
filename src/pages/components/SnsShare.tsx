@@ -32,11 +32,15 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
   text-align: center;
+  margin-top: 32px;
+  padding: 16px;
 `;
 
 const Title = styled.h1`
+  position: relative;
   font-size: 36px;
   font-weight: 1000;
   margin-top: 32px;

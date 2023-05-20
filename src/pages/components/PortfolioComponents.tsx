@@ -77,14 +77,9 @@ const PortfolioComponents = () => {
 
 export default PortfolioComponents;
 
-const ImageTag = styled(Image)`
-  position: relative !important;
-  width: 100% !important;
-  height: unset !important;
-`;
-
 const Container = styled.div`
   width: 100%;
+  padding: 16px;
   column-count: 3;
   @media (max-width: 1024px) {
     column-count: 2;
@@ -100,4 +95,11 @@ const SubContainer = styled.div`
   margin-top: 32px;
   margin-left: 16px;
   margin-right: 16px;
+`;
+
+const ImageTag = styled(Image)`
+  position: relative !important;
+  width: 100% !important;
+  height: unset !important;
+  border-radius: 8px;
 `;
